@@ -1,59 +1,96 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Quiz Board</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="Jumbotron">
-        <h2>Quiz Board</h2>
+
+<!DOCTYPE HTML>
+<head>
+  <meta charset="utf-8">
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Quiz Project</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <form id="quiz" action="index.html" name="quiz" method="POST">
+  <div id="Questions">
+  <div class="jumbotron">
+    <h1>Quiz Board!</h1>
+
+
+    <h2 class="quizHeader">Mark on the correct answer!</h2>
+
+  </div>
+
+
+      <div>
+      <p class="question">1. JavaScript is also known as?</p>
+
+      <ul>
+      <input class="answer" type="radio" name="question1" value="ECMAScript">ECMAScript<br>
+        <input class="answer" type="radio" name="question1" value="CSS">CSS<br>
+        <input class="answer" type="radio" name="question1" value="CDN">CDN<br>
+        <input class="answer" type="radio" name="question1" value="Java">Java<br>
+      </ul>
+    </div>
+
+
+   <div>
+     <p class="question">2. When was the first JavaScript used?</p>
+
+       <ul>
+       <input class="answer" type="radio" name="question2" value="1896">1896<br>
+       <input class="answer" type="radio" name="question2" value="1995">1995<br>
+       <input class="answer" type="radio" name="question2" value="1998">1998<br>
+       <input class="answer" type="radio" name="question2" value="2003">2003<br>
+        </ul>
       </div>
 
+
+
+ <div>
+ <p class="question">3. Which of the following is used for JavaScript file extensions?</p>
+
+    <ul>
+      <input class="answer" type="radio" name="question3" value=".mp3">.mp3<br>
+      <input class="answer" type="radio" name="question3" value=".md">.md<br>
+      <input class="answer" type="radio" name="question3" value=".js">.js<br>
+      <input class="answer" type="radio" name="question3" value=".mpeg">.mpeg<br>
+    </ul>
+   </div>
+
+
+   <div>
+     <p class="question">4. Who is the developer of JavaScript?</p>
+
+       <ul>
+       <input class="answer" type="radio" name="question4" value="Brandon Jennings">Brandon Jennings<br>
+       <input class="answer" type="radio" name="question4" value="Richard Branson">Richard Branson<br>
+       <input class="answer" type="radio" name="question4" value="Mark Zuckerberg">Mark Zuckerberg<br>
+       <input class="answer" type="radio" name="question4" value="Brendan Eich">Brendan Eich<br>
+        </ul>
+      </div>
+
+ <div>
+ <p class="question">5. Which one of these is not a git command! </p>
+
+    <ul>
+      <input class="answer" type="radio" name="question5" value="mkdir">mkdir<br>
+      <input class="answer" type="radio" name="question5" value="cd">cd<br>
+      <input class="answer" type="radio" name="question5" value="git add">git add<br>
+      <input class="answer" type="radio" name="question5" value="undefined">undefined<br>
+    </ul>
+   </div>
+
+    <div class="submitter">
+           <input type="button" name="submit" value="submit" onclick="score()">
+
+      <strong><p id="message"></p></strong>
+      <strong><p id="correct_number"></p></strong>
     </div>
-    <div class="">
-      <p class="question">1. What is the other name of JavaScript?</p>
-      <ul>
-        <input type="radio" name="questionOne" value="ECMAScript">ECMAScript<br>
-        <input type="radio" name="questionOne" value="Java">Java<br>
-        <input type="radio" name="questionOne" value="CSS">CSS<br>
-        <input type="radio" name="questionOne" value="WWW">WWW<br>
-      </ul>
-      <p>2. Which of the following is a file extension for JavaScript files?</p>
-      <ul>
-        <input type="radio" name="questionTwo" value=".js">.js<br>
-        <input type="radio" name="questionTwo" value=".css">.css<br>
-        <input type="radio" name="questionTwo" value=".html">.html<br>
-        <input type="radio" name="questionTwo" value=".mp3">.mp3<br>
-      </ul>
-      <p>3. As a multi-paradigm language, JavaScript supports all of the following styles except.</p>
-      <ul>
-        <input type="radio" name="questionThree" value="Burna Boy">Burna Boy<br>
-        <input type="radio" name="questionThree" value="Event-driven styles">Event-driven styles<br>
-        <input type="radio" name="questionThree" value="Object-orieented styles">Object-oriented styles<br>
-        <input type="radio" name="questionThree" value="Functional styles">Functional stylles<br>
-      </ul>
-      <p>4. In which year was JavaScript first used?</p>
-      <ul>
-        <input type="radio" name="questionFour" value="1876">1876<br>
-        <input type="radio" name="questionFour" value="1998">1998<br>
-        <input type="radio" name="questionFour" value="2007">2007<br>
-        <input type="radio" name="questionFour" value="1995">1995<br>
-      </ul>
-      <p>5. Who is the developer of JavaScript?</p>
-      <ul>
-        <input type="radio" name="questionFive" value="Richard Branson">Richard Branson<br>
-        <input type="radio" name="questionFive" value="McCuban">McCuban<br>
-        <input type="radio" name="questionFive" value="Brendan Eich">Brendan Eich<br>
-        <input type="radio" name="questionFive" value="Santa Clara">Santa Clara<br>
-      </ul>
-    </div>
-    <div class="button">
-       <input type="button" name="submit" onclick="score()" value="submit">
-    </div>
-    <div class="message">
-      <p id="message"></p>
-      <p id="correct_number"></p>
-    </div>
-  </body>
-</html>
+</form>
+
+   <!--show score upon submit-->
+
+   <script src="js/jquery-3.3.1.js"></script>
+   <script src="js/scripts.js"></script>
+   </body>
+   </html>
