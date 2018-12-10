@@ -18,4 +18,7 @@ function score(){
       if (questionFour == "1995") {
         correct++;
       }
+      if (questionFive == "Brendan Eich") {
+        correct++
+      }
 }
