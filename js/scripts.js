@@ -12,5 +12,8 @@ function score(){
       if (questionTwo == ".js") {
         correct++;
       }
+      if (questionThree == "Burna Boy") {
+        correct++;
+      }
       
 }
