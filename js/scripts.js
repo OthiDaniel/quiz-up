@@ -9,5 +9,8 @@ function score(){
       if (questionOne == "ECMAScript") {
         correct++;
       }
+      if (questionTwo == ".js") {
+        correct++;
+      }
       
 }
