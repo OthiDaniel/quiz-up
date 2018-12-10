@@ -6,4 +6,8 @@ function score(){
   var questionFive = document.quiz.questionFive.value;
   var correct = 0;
 
+      if (questionOne == "ECMAScript") {
+        correct++;
+      }
+      
 }
