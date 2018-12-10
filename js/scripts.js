@@ -15,5 +15,7 @@ function score(){
       if (questionThree == "Burna Boy") {
         correct++;
       }
-      
+      if (questionFour == "1995") {
+        correct++;
+      }
 }
