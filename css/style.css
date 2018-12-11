@@ -27,3 +27,12 @@ body{
 #correct_number{
   color:black;
 }
+.jumbotron>h1{
+  color:black;
+}
+.jumbotron>h2{
+  color:black;
+}
+#message{
+  color:black;
+}
