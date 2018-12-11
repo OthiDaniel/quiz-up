@@ -7,22 +7,22 @@ function score(){
   var correct = 0;
 
       if (question1 == "ECMAScript") {
-        correct++;
+        correct+=20;
       }
       if (question2 == "1995") {
-        correct++;
+        correct+=20;
       }
       if (question3 == ".js") {
-        correct++;
+        correct+=20;
       }
       if (question4 == "Brendan Eich") {
-        correct++;
+        correct+=20;
       }
       if (question5 == "undefined") {
-        correct++;
+        correct+=20;
       }
       if(correct <= 1){
-        var messages="idiot";
+        var messages="unlucky";
       }
       if (correct >1 && correct < 3) {
         var messages = "Try harder next time!";
@@ -33,6 +33,12 @@ function score(){
       if (correct > 4) {
         var messages ="Excellent. Move to the next module!";
       }
+      $("#submit").click(function(event){
+        event.preventDefault();
+        $("#form").hide();
+        $("#results").show();
+      })
+
       document.getElementById("message").innerHTML = messages;
       document.getElementById("correct_number").innerHTML = "You got " + correct + " correct";
     };

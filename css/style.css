@@ -1,16 +1,29 @@
 .container{
-<<<<<<< HEAD
-  border: 5px solid blue;
+  border: 2px solid blue;
   color: white;
 }
 body{
 
   background-image: url("http://hdblackwallpaper.com/wallpaper/2015/12/plain-black-3d-4-cool-hd-wallpaper.jpg");
 }
-=======
   border: 2px solid white;
   color: white;
 }
 body{
   background-image: url("http://hdblackwallpaper.com/wallpaper/2015/12/plain-black-3d-4-cool-hd-wallpaper.jpg")
->>>>>>> master
+}
+.jumbotron{
+  background-color: green;
+}
+.submitter{
+  color: green;
+}
+/* #correct_number{
+  display: none;
+} */
+.result{
+  display: none;
+}
+#correct_number{
+  color:black;
+}
